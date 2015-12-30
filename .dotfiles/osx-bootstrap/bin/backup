@@ -1,0 +1,7 @@
+#!/bin/sh
+
+open ~/Applications/BitTorrent\ Sync.app
+open /Applications/Shoebox.app
+open /Applications/Google\ Photos\ Backup.app
+open /Applications/360云盘.app
+

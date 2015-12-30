@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# packages
+brew update
+brew upgrade
+
+brew cask update
+
+sh ~/.oh-my-zsh/tools/upgrade.sh
+
+(cd ~/dev/ges && git pull)
