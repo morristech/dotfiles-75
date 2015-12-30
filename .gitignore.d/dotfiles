@@ -1,0 +1,23 @@
+*
+!/.dotfiles
+!/.dotfiles/osx-bootstrap
+!/.dotfiles/osx-bootstrap/Brewfile
+!/.dotfiles/osx-bootstrap/osx-bootstrap.sh
+!/.dotfiles/osx-bootstrap/osx-noatime.sh
+!/.dotfiles/osx-bootstrap/osx-ram-disk-for-tmp.sh
+!/.gitconfig
+!/.zshenv
+!/.zshrc
+!/LICENSE
+!/Library
+!/Library/Preferences
+!/Library/Preferences/RubyMine70
+!/Library/Preferences/RubyMine70/codestyles
+!/Library/Preferences/RubyMine70/codestyles/Default _1_.xml
+!/Library/Preferences/RubyMine70/keymaps
+!/Library/Preferences/RubyMine70/keymaps/Mac OS X 10_5_ copy.xml
+!/Library/Preferences/RubyMine70/rubymine.vmoptions
+!/bin
+!/bin/backup
+!/bin/setup.sh
+!/bin/update
