@@ -20,13 +20,21 @@ open "https://itunes.apple.com/us/app/sunrise-calendar/id886106985?ls=1&mt=12"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Setup Log rotation
-ln -sf `realpath ./etc/newsyslog.d/io.pftg.dev.conf` /etc/newsyslog.d/io.pftg.dev.conf
+ln -s `realpath ./etc/newsyslog.d/io.pftg.dev.conf` /etc/newsyslog.d/io.pftg.dev.conf
 
 # SSD tricks
 sh osx-noatime.sh
 sh osx-ram-disk-for-tmp.sh
 
 
-# Xcode
+# Setup OSX defaults
+
+cd ~/.dotfiles/osx-bootstrap/
+
+git clone git@github.com:pftg/mathiasbynens-dotfiles.git
+
+cd mathiasbynens-dotfiles
+
+sh .osx
 
 
