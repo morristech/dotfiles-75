@@ -42,8 +42,8 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ln -s `realpath ./etc/newsyslog.d/io.pftg.dev.conf` /etc/newsyslog.d/io.pftg.dev.conf
 
 # SSD tricks
-sh osx-noatime.sh
-sh osx-ram-disk-for-tmp.sh
+source osx-noatime.sh
+source osx-ram-disk-for-tmp.sh
 
 
 # Setup OSX defaults
@@ -54,6 +54,6 @@ git clone git@github.com:pftg/mathiasbynens-dotfiles.git
 
 cd mathiasbynens-dotfiles
 
-sh .osx
+source .osx
 
 
