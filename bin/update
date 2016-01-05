@@ -11,4 +11,4 @@ sh ~/.oh-my-zsh/tools/upgrade.sh
 (cd ~/dev/ges && git pull)
 
 # delete all rails's caches
-find ~/dev/*/tmp/*/* -mtime +60 -exec rm -r {} \;
+find ~/dev/*/tmp/*/* -mtime +60 ! -path '*/pids' -exec rm -r {} \;
