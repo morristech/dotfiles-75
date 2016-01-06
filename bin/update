@@ -12,3 +12,6 @@ sh ~/.oh-my-zsh/tools/upgrade.sh
 
 # delete all rails's caches
 find ~/dev/*/tmp/*/* -mtime +60 ! -path '*/pids' -exec rm -r {} \;
+find ~/dev/*/public/assets/*/* -mtime +60 -exec rm -r {} \;
+find ~/dev/*/public/uploads/*/* -mtime +60 -exec rm -rf {} \;
+find ~/dev/*/node_modules/ -mtime +60 -exec rm -fr {} \;
