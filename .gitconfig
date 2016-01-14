@@ -3,3 +3,5 @@
 	name = Paul Nikitochkin
 [push]
 	default = current
+[rerere]
+	enabled = true
