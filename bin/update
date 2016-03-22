@@ -11,7 +11,11 @@ sh ~/.oh-my-zsh/tools/upgrade.sh
 (cd ~/dev/ges && git pull)
 
 # delete all rails's caches
-find ~/dev/*/tmp/*/* -mtime +60 ! -path '*/pids' -exec rm -r {} \;
-find ~/dev/*/public/assets/*/* -mtime +60 -exec rm -r {} \;
-find ~/dev/*/public/uploads/*/* -mtime +60 -exec rm -rf {} \;
+echo "Sizes before cleanup:"
+df -hl
+find ~/dev/*/tmp/*/* -mtime +5 ! -path '*/pids' -exec rm -r {} \;
+find ~/dev/*/public/assets/*/* -mtime +5 -exec rm -r {} \;
+find ~/dev/*/public/uploads/*/* -mtime +5 -exec rm -rf {} \;
 find ~/dev/*/node_modules/ -mtime +60 -exec rm -fr {} \;
+echo "Sizes after cleanup:"
+df -hl
